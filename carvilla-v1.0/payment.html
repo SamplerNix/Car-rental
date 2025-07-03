@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Online-Shopping</title>
+    <link rel="stylesheet" href="payment.css">
+
+    <script>
+        function fun(){
+            alert("YOU HAVE SUCCESSFULLY PLACED YOUR ORDER")
+            location.href="index.html"
+        }
+    </script>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <fieldset>
+            <legend><h2>Deliver to:</h2></legend>
+    <div class="x">
+        
+            <br><br>
+            <b>NAME:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;
+        <input type="text" name="name" id="name" placeholder="enter your name:" autofocus>
+         <br>
+         <br>
+         <b>E-MAIL:</b>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <input type="email" name="email" id="email" placeholder="aa@gg.com">
+        <BR></BR>
+         <b>ADDRESS:</b>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+         <textarea name="address" id="address" cols="50" rows="5" placeholder="enter your permanent address"></textarea>
+         <br>
+         <br>
+         <b>PHONE NUMBER:</b>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+         <input type="number" name="phn" id="phn" placeholder="enter your 10 digit number here">
+         <br>
+         <br>
+         <b>COMMENT:</b>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <textarea name="comment" id="comment" cols="50" rows="5" placeholder="enter your feedback here"></textarea>
+         <br><br>
+         </fieldset>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<hr>
+    <header id="home">
+        <nav>
+            <div class="logo"><a href="index.html">CAR VILLA</a></div>
+            <div class="menu">
+                <a class="nav" href="#home">Home</a>
+            </div>
+        </nav></header>
+    <section id="payment">
+        <div class="payment">
+            <fieldset>
+                <legend><h2>Payment method</h2></legend>
+                <img src="https://ae.visamiddleeast.com/dam/VCOM/regional/ap/taiwan/global-elements/images/tw-visa-gold-card-498x280.png" alt="visa card" height="120px">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Xy-LH4kbOn8YG4nkGEhiHgHaGe%26pid%3DApi&f=1" alt="Mastercard" height="120px">
+            
+                <br>
+                <br>
+               
+                <b>Card Type*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;
+                <select required>
+                <option value=""->--Select a card type-</option>
+                <option value="Visa">Visa</option>
+                <option value="Maestro">Maestro</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard ">Mastercard</option>
+            </select>
+            <br>
+            <br>
+            <pre><b>Card number*:</b>                <input type="number" required ></pre>
+            
+            <br>
+            <br>
+            <b>Expiry Date*:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date" required>
+            <br>
+            <br>
+            <b>CVV*:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" max="3" required> <br><br>
+            </fieldset>
+            <br>
+            <br>
+            <center><input onclick="fun()" class="submit" type="submit" value="Pay now">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="submit" type="reset" value="Reset"></center>
+            
+                </form>
+            </div>
+    </section>
+
+
+    
+</body>
+</html>
