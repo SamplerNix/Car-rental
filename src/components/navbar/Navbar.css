@@ -1,0 +1,56 @@
+/* Using the Dark & Subtle Fixed-Top Navbar approach */
+.navbar {
+    background-color: #222831;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-sizing: border-box; /* ✅ Prevent overflow */
+}
+.navbar-brand {
+    color: #FFFFFF; /* Pure White */
+    font-family: 'Montserrat', sans-serif; /* Or 'Poppins' */
+    font-size: 24px;
+    font-weight: 700; /* Bold */
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 30px; /* Space between links */
+}
+
+.nav-link {
+    color: #EEEEEE; /* Light Grey */
+    font-family: 'Roboto', sans-serif; /* Or 'Inter' */
+    font-size: 17px;
+    font-weight: 500; /* Medium */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #007BFF; /* Vibrant Blue */
+}
+
+/* Add responsive design for mobile (e.g., hamburger menu) */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide by default, use JS to toggle a mobile menu */
+        /* ... add mobile menu styling ... */
+    }
+    /* Add a hamburger icon here */
+}

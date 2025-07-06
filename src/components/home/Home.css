@@ -1,0 +1,23 @@
+.Home-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Home-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(44, 62, 80, 0.7); /* #2C3E50 with opacity */
+    padding: 100px;
+    border-radius: 10px;
+    text-align:center;
+    /*backdrop-filter: blur(5px); !* Blur inside the box *!*/
+    /*-webkit-backdrop-filter: blur(5px);*/
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    color: #ECF0F1;
+    width: 700px;
+    font-family: 'Inter', sans-serif;
+
+}

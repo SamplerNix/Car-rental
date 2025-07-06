@@ -1,0 +1,125 @@
+.login-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*.blurred-bg {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    !*background-image: url('../assets/ca3.gif'); !* adjust path if needed *!*!*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    filter: blur(8px);*/
+/*    z-index: 1;*/
+/*}*/
+.login-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6); /* translucent dark glass effect */
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    width: 400px;
+    font-family: 'Inter', sans-serif;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-container button {
+    background-color: #3498DB;
+    color: #ECF0F1;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #2980B9; /* Darker blue on hover */
+}
+
+/* Secondary Text */
+.login-container .secondary-text {
+    color: #BDC3C7;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Error Text */
+.login-container .error-text {
+    color: #E74C3C;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.signup-text {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #BDC3C7;
+}
+
+.signup-text a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px; /* space between label and input */
+}
+
+.login-label {
+    color: #ECF0F1;
+    font-size: 20px;
+    width: 90px; /* adjust as needed */
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-container input {
+    flex: 1;
+    background-color: #34495E;
+    color: #ECF0F1;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+/*for showing a password*/
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-wrapper input {
+    flex: 1;
+    padding-right: 40px; /* space for the icon */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*end*/
+
