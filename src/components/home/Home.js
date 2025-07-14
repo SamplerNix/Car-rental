@@ -7,7 +7,7 @@ export default function Home(){
             <h1>
                 Get Your Desired Car at Resonable Price
             </h1>
-            <p> We provoide best car with a best price</p>
+            <p> This is home page for website</p>
                 </div>
         </div>
     );
