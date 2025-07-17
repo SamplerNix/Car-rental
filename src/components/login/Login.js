@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import { doSigninWithEmailAndPassword } from '../../Firebase/auth'; // corrected import
 // import { useAuth } from '../../Context/authContext';
 
 function Login() {
+    const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
     // const { userLoggedIn } = useAuth();
     const [email, setEmail] = useState('');
@@ -15,7 +17,6 @@ function Login() {
     const togglePassword = () => {
         setShowPassword((prev) => !prev);
     };
-
     const onSubmit = async (e) => {
         e.preventDefault();
         if (!isSigningIn) {
@@ -23,14 +24,14 @@ function Login() {
             setErrorMessage('');
             try {
                 await doSigninWithEmailAndPassword(email, password);
-                // optionally redirect or show success message
+                navigate('../home', { state: { email } });
             } catch (err) {
                 setErrorMessage(err.message);
             }
             setIsSigningIn(false);
         }
-    };
-
+    };    
+    
     return (
         <div className="login-background">
             <div className="login-container">
